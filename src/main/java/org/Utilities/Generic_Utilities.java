@@ -11,10 +11,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Generic_Utilities {
 static WebDriver driver;
 	
-	public static WebDriver launchBrowser(String browser , String url)
+	public static WebDriver launchingBrowser(String browser , String url)
 	{
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--disabled-notification");
+		options.addArguments("--disable-notifications");
 		if(browser.equalsIgnoreCase("chrome"))
 		{
 			driver = new ChromeDriver(options);
